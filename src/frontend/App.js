@@ -1,12 +1,18 @@
 import './App.css';
 import './index.css';
-import Header from '../components/Header';
-import '../components/Header.css'
+import '../components/Navbar' 
+import Navbar  from '../components/Navbar';
+import Landing from '../components/Landing';
+import Footer from '../components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
+    <div className="min-h-screen">
+      <div className="gradient-bg-landing">
+        <Navbar/>
+        <Landing/>
+      </div>
+      <Footer />
     </div>
   );
 }
