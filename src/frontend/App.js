@@ -7,8 +7,8 @@ import Footer from '../components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <div className="gradient-bg-landing">
+    <div>
+      <div>
         <Navbar/>
         <Landing/>
       </div>
