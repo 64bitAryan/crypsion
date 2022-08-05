@@ -1,13 +1,22 @@
 import React from 'react';
 import logo from '../images/crypsion.png';
+import search from '../images/search.png'
+import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className='w-full flex md:justify-center justify-between items-center p-4'>
-      <div className='md:flex-[0.5] flex-initial justify-center items-center'>
-        <img src={logo} alt='logo' className='w-32 cursor-pointer'/>
+    <div className='navbar'>
+      <div className='logoContainer'>
+        <img src={logo} alt='Logo' className='crypsionLogo'/>
       </div>
-    </nav>
+
+      <div className='searchBar'>
+        <div className='searchIconContainer'>
+          <img src={search} alt='search icon' className='searchIcon' />
+        </div>
+        <input className='searchInput' placeholder="Search, Items, NFT's, Profiles"/>
+      </div>
+    </div>
   );
 }
 

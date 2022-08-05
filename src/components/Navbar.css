@@ -1,0 +1,44 @@
+.navbar {
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#04111D;
+}
+
+.navbar > div {
+    margin: 10px;
+}
+
+.searchBar {
+    background-color: #04111D;
+    border: 3px;
+    display: flex;
+    flex: 1;
+    border-radius: 20px;
+    align-items: center;
+    border-color:#6e6e6e;
+}
+
+.searchIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.searchIconContainer {
+    margin: 10px;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size:16px;
+    color: white;
+}
+
+.crypsionLogo {
+    width: 200px;
+}
