@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../images/crypsion.png';
 import search from '../images/search.png';
-import profileIcon from '../images/person.png';
+import profileIcon from '../images/profile.svg';
 import './Navbar.css';
 
 const Navbar = () => {

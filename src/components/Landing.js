@@ -13,6 +13,10 @@ const Landing = () => {
             <div className='subtitleText'>
               Crypsion is the world's first and largest NFT marketplace
             </div>
+            <div className='buttons'>
+              <button className='explorBtn'>Explore</button>
+              <button className='connectBtn'>Connect Wallet</button>
+            </div>
           </div>
         </div>
     </div>

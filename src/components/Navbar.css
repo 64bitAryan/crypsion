@@ -1,9 +1,12 @@
 .navbar {
     color: white;
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 100;
     background-color:#04111D;
 }
 
@@ -14,7 +17,7 @@
 .searchBar {
     background-color: transparent;
     display: flex;
-    flex: 1;
+    flex: 0.7;
     border-style: solid;
     border-width: 2px;
     border-color: #FFFFFF;
@@ -59,7 +62,6 @@
 .profileLogoContainer {
     display: flex;
     border-radius: 50px;
-    padding: 10px;
     align-items: center; /* justify verticall */
     justify-content: center; /* justify Horizontally */
     object-fit: contain; /* Adjust height and width */
@@ -68,6 +70,14 @@
 
 .profileLogoContainer > img {
     height: 35px;
+}
+
+.profileIcon{
+    filter: invert(69%) sepia(12%) saturate(208%) hue-rotate(186deg) brightness(93%) contrast(91%);
+}
+
+.profileIcon:hover{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(100%) contrast(103%);
 }
 
 .exploreBtn:hover {
