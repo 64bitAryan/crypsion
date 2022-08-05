@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../images/crypsion.png';
-import search from '../images/search.png'
+import search from '../images/search.png';
+import profileIcon from '../images/person.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -16,6 +17,19 @@ const Navbar = () => {
         </div>
         <input className='searchInput' placeholder="Search, Items, NFT's, Profiles"/>
       </div>
+
+      <div className='headerItems'>
+        <p className='exploreBtn'>Explore</p>
+        <p className='statsBtn'>Stats</p>
+        <p className='createBtn'>Create</p>
+      </div>
+
+      <div className='headerAction'>
+        <div className='profileLogoContainer'>
+          <img src={profileIcon} alt='profile icon' className='profileIcon'/>
+        </div>
+      </div>
+
     </div>
   );
 }
