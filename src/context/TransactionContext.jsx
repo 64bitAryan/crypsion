@@ -20,38 +20,42 @@ const getEthereumContract = () => {
 
 export const MarketplaceProvider = ({children}) => {
 
-    const [connectedAccount, setCurrentAccount] = useState("")
+    const [currentAccount, setCurrentAccount] = useState("")
 
     const checkIfWalletIsConnected = async () => {
-        if(!ethereum) return alert("Plese install metamask");
+        try {
+            if(!ethereum) return alert("Plese install metamask");
 
-        const accounts = await ethereum.request({method: 'eth_accounts'});
-
-        if(accounts.length) {
-            setCurrentAccount(accounts[0])
-        } else {
-            console.log("No account found")
-        }
-        console.log(accounts)
-
-        const connectWallet = async() => {
-            try{
-                if(!ethereum) return alert("Plese install metamask");
-                const accounts = await ethereum.request({method: 'eth_requestAccounts'});
-
-                setCurrentAccount(accounts[0]);
-            } catch(err) {
-                console.log(err);
-                throw new Error("No ethereum object");
+            const accounts = await ethereum.request({method: 'eth_accounts'});
+    
+            if(accounts.length) {
+                setCurrentAccount(accounts[0])
+            } else {
+                console.log("No account found")
             }
+        } catch(err) {
+            console.log(err);
         }
-
-        useEffect(() => {
-            checkIfWalletIsConnected();
-        }, []);
     }
+
+    const connectWallet = async() => {
+        try{
+            if(!ethereum) return alert("Plese install metamask");
+            const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+
+            setCurrentAccount(accounts[0]);
+        } catch(err) {
+            console.log(err);
+            throw new Error("No ethereum object");
+        }
+    }
+
+    useEffect(() => {
+        checkIfWalletIsConnected();
+    }, []);
+
     return (
-        <MarketplaceContext.Provider value={{ connectWallet }}>
+        <MarketplaceContext.Provider value={{ connectWallet, currentAccount }}>
             {children}
         </MarketplaceContext.Provider>
     );

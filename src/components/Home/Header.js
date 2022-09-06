@@ -1,9 +1,9 @@
 import React from 'react'
-import logoImg from '../images/crypsion.png' 
+import logoImg from '../../images/crypsion.png' 
 import { AiOutlineSearch } from 'react-icons/ai'
 import { CgProfile } from 'react-icons/cg'
 import { MdOutlineAccountBalanceWallet } from 'react-icons/md'
-import { MarketplaceContext } from './context/TransactionContext';
+import { MarketplaceContext } from '../../context/TransactionContext';
 import { useContext } from 'react';
 
 const style = {
@@ -19,7 +19,7 @@ const style = {
 }
 const Header = () => {
 
-  const {connectWallet} = useContext(MarketplaceContext);
+  const {connectWallet, currentAccount} = useContext(MarketplaceContext);
   return (
     <div className={style.wrapper}>
         <a href='/collections'>
@@ -41,7 +41,7 @@ const Header = () => {
             <div className={style.headerIcon}>
                 <CgProfile/>
             </div>
-            <div className={style.headerIcon} onClick = {{connectWallet}}>
+            <div className={style.headerIcon} onClick = {connectWallet}>
                 <MdOutlineAccountBalanceWallet/>
             </div>
         </div>
