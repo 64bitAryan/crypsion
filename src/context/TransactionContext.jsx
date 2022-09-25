@@ -24,7 +24,7 @@ export const MarketplaceProvider = ({children}) => {
 
     const checkIfWalletIsConnected = async () => {
         try {
-            if(!ethereum) return alert("Plese install metamask");
+            if(!ethereum) return alert("Please install Metamask");
 
             const accounts = await ethereum.request({method: 'eth_accounts'});
     
@@ -40,7 +40,7 @@ export const MarketplaceProvider = ({children}) => {
 
     const connectWallet = async() => {
         try{
-            if(!ethereum) return alert("Plese install metamask");
+            if(!ethereum) return alert("Please install Metamask");
             const accounts = await ethereum.request({method: 'eth_requestAccounts'});
 
             setCurrentAccount(accounts[0]);

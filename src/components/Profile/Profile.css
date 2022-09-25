@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: rgb(201,201,201);
+    background: linear-gradient(rgba(201,201,201,1) 0%, rgba(136,136,136,1) 4%, rgba(103,103,103,1) 7%, rgba(95,95,95,1) 10%, rgba(82,82,82,1) 13%, rgba(78,78,78,1) 16%, rgba(77,77,77,1) 19%, rgba(65,65,65,1) 22%, rgba(59,59,59,1) 25%, rgba(28,28,28,1) 46%, rgba(23,23,23,1) 100%);
+    padding: 0;
+    margin: 0;
+}

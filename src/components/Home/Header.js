@@ -20,6 +20,7 @@ const style = {
 const Header = () => {
 
   const {connectWallet, currentAccount} = useContext(MarketplaceContext);
+  console.log(currentAccount)   
   return (
     <div className={style.wrapper}>
         <a href='/collections'>
