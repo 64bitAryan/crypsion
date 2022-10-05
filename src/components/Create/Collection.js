@@ -23,7 +23,7 @@ function Collection() {
         <h4>These tokens can be used to buy and sell your items.</h4>
 
         <p className='eth-token'>ETH <br>Ethereum</br></p>
-
+        
         <button className='Create-btn'>Create</button>
     </div>
   )
