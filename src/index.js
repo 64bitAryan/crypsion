@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <MarketplaceProvider>
     <React.StrictMode>
-      <Item/>      
+      <App/>   
     </React.StrictMode>
   </MarketplaceProvider>
 );
