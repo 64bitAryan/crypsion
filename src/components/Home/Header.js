@@ -5,6 +5,7 @@ import { CgProfile } from 'react-icons/cg'
 import { MdOutlineAccountBalanceWallet } from 'react-icons/md'
 import { MarketplaceContext } from '../../context/TransactionContext';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom'
 
 const style = {
   wrapper: `bg-[#04111d] w-screen px-[1.2rem] py-[0.8rem] flex`,
@@ -23,7 +24,7 @@ const Header = () => {
   console.log(currentAccount)   
   return (
     <div className={style.wrapper}>
-        <a href='/collections'>
+        <a href='/'>
             <div className={style.logoContainer}>
                 <img src={logoImg} alt='crypsion' height={100} width={140}/>
             </div>
@@ -38,7 +39,7 @@ const Header = () => {
             <div className={style.headerItem}>Collections</div>
             <div className={style.headerItem}>Stats</div>
             <div className={style.headerItem}>Resources</div>
-            <div className={style.headerItem}>Create</div>
+            <Link to='collection' className={style.headerItem}>Create</Link>
             <div className={style.headerIcon}>
                 <CgProfile/>
             </div>
