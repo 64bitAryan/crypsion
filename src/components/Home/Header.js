@@ -39,7 +39,7 @@ const Header = () => {
             <div className={style.headerItem}>Collections</div>
             <div className={style.headerItem}>Stats</div>
             <div className={style.headerItem}>Resources</div>
-            <Link to='collection' className={style.headerItem}>Create</Link>
+            <Link to='create/collection' className={style.headerItem}>Create</Link>
             <div className={style.headerIcon}>
                 <CgProfile/>
             </div>

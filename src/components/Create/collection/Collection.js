@@ -1,14 +1,10 @@
 import React from 'react'
-import './Collection.css';
+import '../Create.css'
 
 const Collection = () => {
   return (
     <div className='mainContainer'>
       <div className='realtiveContainer'>
-        <div className='shiftButtons'>
-          <div className='flex-child-element createCollection'>Create a Collection</div>
-          <div className='flex-child-element createItem'>Create a new Item</div>
-        </div>
         <div className='contentWrapper'>
           <div className='createCollectionTitle'>Create Collection</div>
           <div className='smallText'>Required field</div>
